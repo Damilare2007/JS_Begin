@@ -37,3 +37,15 @@ console.log(checkAge(72));
 //ASSIGNMENT
 // Create a function that calculates the age of a person when they input their year of birth
 
+function calculateAge(yearofbirth){
+    const currentYear = new Date().getFullYear();
+
+    const age = currentYear - yearofbirth;
+
+    return age;
+
+}
+
+console.log('Age if born in 2000:', calculateAge(2000));
+console.log('Age if born in 2005:', calculateAge(2005));
+console.log('Age if born in 2025:', calculateAge(2025));
