@@ -1,188 +1,215 @@
-// Data types
+// // Data types
 
-//Strings
-const fullName = "John Doe";
+// //Strings
+// const fullName = "John Doe";
 
-console.log('string:', fullName);
+// console.log('string:', fullName);
 
-//Numbers
-const numberData = 42;
+// //Numbers
+// const numberData = 42;
 
-console.log('number:', numberData)
+// console.log('number:', numberData)
 
-//Booleans
-const user = true;
-const notUser = false;
+// //Booleans
+// const user = true;
+// const notUser = false;
 
-console.log('boolean:', user, notUser);
-
-
-//Array
-const users = ['John', 'Jane', 'Doe'];
-const numbers = [1, 2, 3, 4, 5];
+// console.log('boolean:', user, notUser);
 
 
-//Printing Array
-console.log('Array:', users, numbers);
-
-//Accessing Array Elements
-console.log ('First User:', users[0]);
-console.log ('Second Number:', numbers[1]);
-
-//Length of Array
-console.log('User Length:', users.length);
-console.log('Numbers Length:', numbers.length);
-
-//Objects
-
-//Creating Object
-const person = {
-    FirstName: 'John',
-    LastName: 'Doe',
-    age: 30,
-    dob: '01-01-1990',
-    isStudent: true
-};
-
-//Printing Object
-console.log('Object:', person);
-console.log('First Name:', person.FirstName);
-console.log('Last Name:', person.LastName);
-
-//concatenating First and Last Name
-console.log('Full Name:', person.FirstName + ' ' + person.LastName);
-
-//template literals
-console.log(`My name is ${person.FirstName} ${person.LastName} and I am ${person.age} years old.`);
-
-//Operators 
-//Arithmetic Operators =
-//Arithmetic Operators + - * / %
-
-const addition = 5 + 3;
-console.log('Addition:', addition);
-
-const subtraction = 5 - 3;
-console.log('Subtraction:', subtraction);
-
-const multiplication = 5 * 3;
-console.log('Multiplication:', multiplication);
-
-const division = 5 / 3;
-console.log('Division:', division);
-
-const modulo = 14 % 5;
-console.log('Modulo:', modulo);
+// //Array
+// const users = ['John', 'Jane', 'Doe'];
+// const numbers = [1, 2, 3, 4, 5];
 
 
-//Comparism Operators == === != !==  >= <=  < >
+// //Printing Array
+// console.log('Array:', users, numbers);
 
-const isGreater = 5 > 3;
-console.log('Is 5 greater than 3?:', isGreater);
+// //Accessing Array Elements
+// console.log ('First User:', users[0]);
+// console.log ('Second Number:', numbers[1]);
 
-const isLesser = 20 < 3;
-console.log('Is 5 less than 3?:', isLesser);
+// //Length of Array
+// console.log('User Length:', users.length);
+// console.log('Numbers Length:', numbers.length);
 
-const greaterOrEqual = 3 >= 5;
-console.log('Is 5 greater than or equal to 5?:', greaterOrEqual);
+// //Objects
 
-const doubleEqual = 7 == 9; 
-console.log('Is 7 Double equal to "9"?:', doubleEqual);
+// //Creating Object
+// const person = {
+//     FirstName: 'John',
+//     LastName: 'Doe',
+//     age: 30,
+//     dob: '01-01-1990',
+//     isStudent: true
+// };
 
-const addTypes = 7 + '9';
-console.log('Adding number and string:', addTypes);
+// //Printing Object
+// console.log('Object:', person);
+// console.log('First Name:', person.FirstName);
+// console.log('Last Name:', person.LastName);
 
-const notSingleEquals = 7 != '7'
-console.log('Is 7 not single equal to "7"?:', notSingleEquals);
+// //concatenating First and Last Name
+// console.log('Full Name:', person.FirstName + ' ' + person.LastName);
 
-//CONTROL FLOWS
+// //template literals
+// console.log(`My name is ${person.FirstName} ${person.LastName} and I am ${person.age} years old.`);
 
-//Conditionsl Statements
+// //Operators 
+// //Arithmetic Operators =
+// //Arithmetic Operators + - * / %
 
-if(person.age >= 18){
-    console.log(`${person.FirstName} is an adult.`);
-} else if(person.age < 18){
-    console.log(`${person.FirstName} is a Child.`);
-}
+// const addition = 5 + 3;
+// console.log('Addition:', addition);
 
-if(!person.isStudent){
-    console.log(`${person.FirstName} is not a student.`);
-}else{
-    console.log(`${person.FirstName} is a student.`);
-}
+// const subtraction = 5 - 3;
+// console.log('Subtraction:', subtraction);
 
-//Multiple Conditions with and
-if(person.age >= 18 && person.isStudent){
-    console.log('He is in University.');
-} else if(person.age <= 18 && person.isStudent){
-    console.log('He is in High-School.');
-} else if(person.age > 18 && person.age < 30 && !person.isStudent){
-    console.log('He is married.');
-}
+// const multiplication = 5 * 3;
+// console.log('Multiplication:', multiplication);
 
-//Multiple Conditions with or
-if(person.age < 18 || !person.isStudent){
-    console.log('He is either a Child or not a student.');
-}
+// const division = 5 / 3;
+// console.log('Division:', division);
 
-
-//LOOPS
-//Repeats code a specific number of tume
-
-//For loop
-for(let i = 0; i < 10; i++){
-    console.log('For Loop Iteration:', i);
-}
+// const modulo = 14 % 5;
+// console.log('Modulo:', modulo);
 
 
-// While Loop
-let count = 1;
+// //Comparism Operators == === != !==  >= <=  < >
 
-while(count <= 10){
-    console.log('While Loop Count:', +count);
+// const isGreater = 5 > 3;
+// console.log('Is 5 greater than 3?:', isGreater);
 
-    count++;
-}
+// const isLesser = 20 < 3;
+// console.log('Is 5 less than 3?:', isLesser);
 
+// const greaterOrEqual = 3 >= 5;
+// console.log('Is 5 greater than or equal to 5?:', greaterOrEqual);
 
+// const doubleEqual = 7 == 9; 
+// console.log('Is 7 Double equal to "9"?:', doubleEqual);
 
-//NEXT CLASS
-//Functions and Array Methods
+// const addTypes = 7 + '9';
+// console.log('Adding number and string:', addTypes);
 
-//What are functions?
-//Functions is a block of code that carry a particular implementation or functionality. It is executed when "something" invokes it (calls it).
+// const notSingleEquals = 7 != '7'
+// console.log('Is 7 not single equal to "7"?:', notSingleEquals);
 
-// Functions and Array Methods
+// //CONTROL FLOWS
 
-// Funtions
-// function addNumber(one, two) {
-// 	return one + two
+// //Conditionsl Statements
+
+// if(person.age >= 18){
+//     console.log(`${person.FirstName} is an adult.`);
+// } else if(person.age < 18){
+//     console.log(`${person.FirstName} is a Child.`);
 // }
 
-// const subtractNumbers = (one, two) => one - two
+// if(!person.isStudent){
+//     console.log(`${person.FirstName} is not a student.`);
+// }else{
+//     console.log(`${person.FirstName} is a student.`);
+// }
 
-// console.log(addNumber(5, 7))
+// //Multiple Conditions with and
+// if(person.age >= 18 && person.isStudent){
+//     console.log('He is in University.');
+// } else if(person.age <= 18 && person.isStudent){
+//     console.log('He is in High-School.');
+// } else if(person.age > 18 && person.age < 30 && !person.isStudent){
+//     console.log('He is married.');
+// }
 
-// console.log(subtractNumbers(10, 7))
+// //Multiple Conditions with or
+// if(person.age < 18 || !person.isStudent){
+//     console.log('He is either a Child or not a student.');
+// }
 
-const calculateNumber = (first, second) => {
-	// if (first > second) {
-	// 	return first - second
-	// } else {
-	// 	return second - first
-	// }
-	return first > second ? first - second : second - first
-}
 
-console.log(calculateNumber(30, 105))
+// //LOOPS
+// //Repeats code a specific number of tume
+
+// //For loop
+// for(let i = 0; i < 10; i++){
+//     console.log('For Loop Iteration:', i);
+// }
+
+
+// // While Loop
+// let count = 1;
+
+// while(count <= 10){
+//     console.log('While Loop Count:', +count);
+
+//     count++;
+// }
+
+
+
+// //NEXT CLASS
+// //Functions and Array Methods
+
+// //What are functions?
+// //Functions is a block of code that carry a particular implementation or functionality. It is executed when "something" invokes it (calls it).
+
+// // Functions and Array Methods
+
+// // Funtions
+// // function addNumber(one, two) {
+// // 	return one + two
+// // }
+
+// // const subtractNumbers = (one, two) => one - two
+
+// // console.log(addNumber(5, 7))
+
+// // console.log(subtractNumbers(10, 7))
+
+// const calculateNumber = (first, second) => {
+// 	// if (first > second) {
+// 	// 	return first - second
+// 	// } else {
+// 	// 	return second - first
+// 	// }
+// 	return first > second ? first - second : second - first
+// }
+
+// console.log(calculateNumber(30, 105))
 
 // Array methods
-const users = ['Daniel', 'Michael', 'Lola', 'Niyi']
+// const users = ['Daniel', 'Michael', 'Lola', 'Niyi']
 
-console.log(users)
+// console.log(users)
 
 // console.log(users.pop()) // Isolate the last item on the array
-// console.log(users.slice(-1)) // Remove the last item from the array
+// console.log(users.slice(-1)) // Remove the last item from the array and put it in a new array
+
 // console.log(users.splice(-1))
 
+
+// list of students (array of objects)
+// list of students (array of objects)
+const students = [
+    { name: "John Doe", age: 20, level: "200L" },
+    { name: "Jane Smith", age: 22, level: "300L" },
+    { name: "Michael Johnson", age: 19, level: "100L" },
+    { name: "Lola Ade", age: 21, level: "400L" }
+]
+
+// connect to the ul in html
+const studentList = document.getElementById("studentList")
+
+// loop through students
+for(let i = 0; i < students.length; i++){
+let student = students[i]
+
+  // create li
+let li = document.createElement("li")
+
+  // show the student details
+li.textContent = student.name + " - Age: " + student.age + ", Level: " + student.level
+
+  // put li inside ul
+studentList.appendChild(li)
+}
 
